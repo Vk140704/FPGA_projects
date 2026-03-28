@@ -1,0 +1,15 @@
+    #for the system clk
+    set_property -dict { PACKAGE_PIN N11    IOSTANDARD LVCMOS33 } [get_ports { clk }];
+    
+    #push_button for the rst
+    set_property -dict {PACKAGE_PIN K13 IOSTANDARD LVCMOS33 PULLDOWN true} [get_ports {rst}]; #Button-top
+    
+    #led for the output
+    set_property -dict { PACKAGE_PIN J3    IOSTANDARD LVCMOS33 } [get_ports { N[0] }];#LSB
+    set_property -dict { PACKAGE_PIN H3    IOSTANDARD LVCMOS33 } [get_ports { N[1] }];
+    set_property -dict { PACKAGE_PIN J1    IOSTANDARD LVCMOS33 } [get_ports { E[0] }];
+    set_property -dict { PACKAGE_PIN K1    IOSTANDARD LVCMOS33 } [get_ports { E[1] }];
+    set_property -dict { PACKAGE_PIN L3    IOSTANDARD LVCMOS33 } [get_ports { S[0] }];
+    set_property -dict { PACKAGE_PIN L2    IOSTANDARD LVCMOS33 } [get_ports { S[1] }];
+    set_property -dict { PACKAGE_PIN K3    IOSTANDARD LVCMOS33 } [get_ports { W[0] }];
+    set_property -dict { PACKAGE_PIN K2    IOSTANDARD LVCMOS33 } [get_ports { W[1] }];
